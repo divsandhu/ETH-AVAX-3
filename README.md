@@ -9,7 +9,7 @@ This Solidity smart contract implements a basic ERC20 token with additional func
 - ERC20 Token: Implements the standard ERC20 token interface.
 - Ownership: Uses Ownable from OpenZeppelin to restrict access to certain functions.
 - Initial Supply: Upon deployment, the contract mints an initial supply of tokens to the contract owner.
-- Only owner can mint but any user can burn the tokens.
+- Only owner can mint but any user can burn the
 
 ## Installation
 
