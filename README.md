@@ -32,6 +32,7 @@ The constructor initializes the token with a name and symbol provided during dep
 
 - `mint(address to, uint256 amount)`: Allows Only the owner to mint new tokens and send them to the specified address.
 - `burn(uint256 amount)`: Allows any token holder to burn (destroy) their own tokens.
+- `function transferTokens(address recipient, uint256 amount)`: Allows user to transfer tokens to a provided address.
 
 ## Security
 

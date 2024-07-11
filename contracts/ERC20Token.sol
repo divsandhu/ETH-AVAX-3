@@ -12,12 +12,17 @@ contract MyToken is ERC20, Ownable {
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
-		// Minting
+        // Minting
         _mint(to, amount);
     }
 
     function burn(uint256 amount) public {
-		// Burning
+        // Burning
         _burn(msg.sender, amount);
+    }
+
+    function transferTokens(address recipient, uint256 amount) public {
+        // Explicit transfer function
+        _transfer(msg.sender, recipient, amount);
     }
 }
